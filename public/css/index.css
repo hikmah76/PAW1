@@ -1,0 +1,302 @@
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #bebcbc;
+        }
+
+        .navbar img {
+            max-height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        .icon-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon-group i {
+            font-size: 24px;
+            color: white;
+        }
+
+        .additional-content {
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        #cardsContainer {
+            margin: 0;
+            padding: 0;
+        }
+
+        .add-todo-form {
+            display: none;
+            margin-bottom: 0;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        #addTodoForm {
+            overflow: hidden;
+        }
+
+        .additional-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .unwanted-element {
+            display: none !important;
+        }
+
+        #addTodoForm {
+            background-color: #d8d5d5(255, 0, 0, 0.5);
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 0;
+        }
+
+        .card {
+            border: 1px solid #c1bfbf;
+            border-radius: 8px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #bebcbc;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+    transform: scale(1.1); /* Meningkatkan skala card sebesar 10% */
+}
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card-description {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .card-actions {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card-actions button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-actions .edit-btn {
+            background-color: #d8d5d5;
+            color: white;
+        }
+
+        .card-actions .delete-btn {
+            background-color: #d8d5d5;
+            color: white;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #bebcbc;
+            color: #333;
+            padding: 0px 0;
+            margin-top: auto; /* Agar footer selalu di bawah */
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body, h1, h2, h3, p, div, input, textarea, button {
+            margin: 0;
+            padding: 0;
+        }
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left img {
+    max-height: 50px;
+}
+
+.footer-center .footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-center .footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-center .footer-links a:hover {
+    color: #ff6600;
+}
+
+.footer-right .footer-contact a,
+.footer-right .footer-social a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-right .footer-social a {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer-right .footer-contact a:hover,
+.footer-right .footer-social a:hover {
+    color: #ff6600;
+}
+
+/* Sticky footer fix for small content pages */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Hilangkan margin default */
+}
+
+.container {
+    flex: 1; /* Agar konten utama mengambil ruang */
+}
+
+#addTodoForm {
+    background-color: transparent; /* Menghilangkan latar belakang */
+}
+
+/* CSS */
+.add-todo-btn {
+    background-color: blue;
+    color: white;
+    padding: 100px 100px;
+    margin-bottom: 0px; /* Mungkin ini yang menyebabkan spasi putih? */
+}
+
+.white-space {
+    height: 20px; /* Elemen ini mungkin tidak terlihat, tapi memakan ruang */
+}
+
+.sign-out-link {
+    display: flex;
+    align-items: center;
+    color: white; /* Warna teks putih */
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 15px; /* Jarak antar ikon */
+}
+
+.sign-out-link i {
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+.sign-out-link:hover {
+    color: #ffcc00; /* Warna berubah saat hover */
+}
+
+.copyright-text {
+    color: white; /* Warna teks putih */
+    font-size: 14px; /* Ukuran font */
+    text-align: center; /* Rata tengah */
+    margin: 10px 0; /* Spasi atas dan bawah */
+}
+
+.about-button {
+    background-color: rgb(56, 56, 248); /* Warna biru */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Padding agar tombol terlihat lebih besar */
+    border: none;
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    cursor: pointer; /* Menampilkan pointer saat hover */
+    display: block; /* Agar tombol muncul sebagai block element */
+    margin: 0 auto; /* Memindahkan tombol ke tengah */
+}
+
+.about-button:hover {
+    background-color: darkblue; /* Warna biru gelap saat hover */
+}
+
+/* Memusatkan tombol */
+.button-container {
+    display: flex;
+    justify-content: center; /* Memusatkan tombol secara horizontal */
+    margin: 16px 0; /* Menambahkan margin atas dan bawah */
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal ke tengah */
+    align-items: center; /* Mengatur posisi vertikal ke tengah */
+    height: 100%; /* Pastikan container cukup tinggi */
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal ke tengah */
+    align-items: center; /* Mengatur posisi vertikal ke tengah */
+    width: 100%; /* Pastikan lebar cukup untuk menampilkan konten */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal ke tengah */
+    align-items: center; /* Mengatur posisi vertikal ke tengah */
+}
+
